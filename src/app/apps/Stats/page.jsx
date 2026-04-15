@@ -1,4 +1,7 @@
 import React from 'react';
+export const metadata = {
+  title: "KeenKeeper- Stats",
+};
 
 const Stats = () => {
     return (
