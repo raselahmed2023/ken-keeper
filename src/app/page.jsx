@@ -1,6 +1,8 @@
+import Link from 'next/link';
 import React from 'react';
+import AppCard from "../components/ui/AppCard"
 
-const Hero = async() => {
+const Hero = async () => {
     const stats = [
         { value: 10, label: "Total Friends" },
         { value: 3, label: "On Track" },
@@ -8,9 +10,9 @@ const Hero = async() => {
         { value: 12, label: "Interactions This Month" },
     ];
 
-        const res = await fetch('friends.json');
-        const data = await res.json();
-  
+    const res = await fetch('http://localhost:3000/friends.json');
+    const friends = await res.json();
+
 
     return (
         <div>
@@ -35,6 +37,16 @@ const Hero = async() => {
 
             <div>
                 <h1 className='text-xl font-bold'>Your Friends</h1>
+                <div>
+                    {friends.map((friend) => (
+
+                        <Link href={`/details/${friend.id}`} key={friend.id}>
+                            <div className="cursor-pointer">
+                                <AppCard friend={friend}></AppCard>
+                            </div>
+                        </Link>
+                    ))}
+                </div>
             </div>
 
         </div>
