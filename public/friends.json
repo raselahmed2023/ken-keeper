@@ -94,5 +94,29 @@
     "bio": "Our families have been friends for decades. He's like a cousin to me. We catch up every few weeks over games.",
     "goal": 30,
     "next_due_date": "2026-04-28"
+  },
+  {
+    "id": 9,
+    "name": "Ridoy",
+    "picture": "https://randomuser.me/api/portraits/men/50.jpg",
+    "email": "ridoy@hotmail.com",
+    "days_since_contact": 19,
+    "status": "almost due",
+    "tags": ["family friend", "close friend"],
+    "bio": "Our families have been friends for decades. He's like a cousin to me. We catch up every few weeks over games.",
+    "goal": 35,
+    "next_due_date": "2026-04-30"
+  },
+   {
+    "id": 10,
+    "name": "Rashidiya",
+    "picture": "https://randomuser.me/api/portraits/women/50.jpg",
+    "email": "alrashidiya@gmail.com",
+    "days_since_contact": 21,
+    "status": "almost due",
+    "tags": ["work", "close friend"],
+    "bio": "Colleagues turned best friends. We left the same company the same week and have been cheering each other on since.",
+    "goal": 31,
+    "next_due_date": "2026-05-16"
   }
 ]

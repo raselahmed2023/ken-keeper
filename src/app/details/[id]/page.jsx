@@ -6,6 +6,7 @@ import { RiDeleteBin5Fill } from "react-icons/ri";
 import { MdAddIcCall } from "react-icons/md";
 import { FcSms } from "react-icons/fc";
 import { FaVideo } from "react-icons/fa6";
+import CheckInButtons from '@/components/ui/CheckInButton';
 
 
 
@@ -112,24 +113,8 @@ const DetailPage = async ({ params }) => {
                         </p>
                     </div>
 
-                    {/* Quick Check-In */}
-                    <div className="card bg-base-100 shadow-sm p-5">
-                        <h3 className="font-semibold text-base mb-4">Quick Check-In</h3>
-                        <div className="grid grid-cols-3 gap-3">
-                            <button className="btn btn-outline btn-sm flex flex-col h-16 gap-1">
-                                <MdAddIcCall />
-                                <span className="text-xs">Call</span>
-                            </button>
-                            <button className="btn btn-outline btn-sm flex flex-col h-16 gap-1">
-                                <FcSms />
-                                <span className="text-xs">Text</span>
-                            </button>
-                            <button className="btn btn-outline btn-sm flex flex-col h-16 gap-1">
-                                <FaVideo />
-                                <span className="text-xs">Video</span>
-                            </button>
-                        </div>
-                    </div>
+                    <CheckInButtons friendName={friend.name} />
+                    
 
                     {/* Contact Info */}
                     <div className="card bg-base-100 shadow-sm p-5">
