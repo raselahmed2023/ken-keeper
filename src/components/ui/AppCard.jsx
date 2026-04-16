@@ -5,9 +5,7 @@ import React from 'react';
 const AppCard = ({ friend }) => {
 
     const getStatusStyles = (status) => {
-
         const s = status.toLowerCase();
-
         if (s === 'overdue') {
             return 'bg-[#EF4444] text-white';
         }
@@ -17,7 +15,6 @@ const AppCard = ({ friend }) => {
         else if (s === 'almost due') {
             return 'bg-[#F0AD4E] text-white';
         }
-
     };
 
     return (
@@ -43,10 +40,10 @@ const AppCard = ({ friend }) => {
                         ))}
                     </div>
                     <div className="mt-2">
-                    <span className={`badge border-none font-bold px-5 py-4 text-sm rounded-full capitalize ${getStatusStyles(friend.status)}`}>
-                        {friend.status}
-                    </span>
-                </div>
+                        <span className={`badge border-none font-bold px-5 py-4 text-sm rounded-full capitalize ${getStatusStyles(friend.status)}`}>
+                            {friend.status}
+                        </span>
+                    </div>
 
                 </div>
             </div>
