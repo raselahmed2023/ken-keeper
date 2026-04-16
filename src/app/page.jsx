@@ -37,7 +37,7 @@ const Hero = async () => {
 
             <div>
                 <h1 className='text-xl font-bold'>Your Friends</h1>
-                <div>
+                <div className='grid md:grid-cols-3 grid-cols-1 lg:grid-cols-4 gap-5 mb-10 mt-10 mx-auto container'>
                     {friends.map((friend) => (
 
                         <Link href={`/details/${friend.id}`} key={friend.id}>
