@@ -56,7 +56,7 @@ const TimelinePage = () => {
             
             {filtered.length === 0 ? (
                 <div className="text-center text-gray-400 py-20">
-                    <p className="text-4xl mb-4"><BsMailboxFlag /></p>
+                    <p className="text-4xl mb-4 items-center"><BsMailboxFlag /></p>
                     <p>No interactions yet.</p>
                     <p className="text-sm mt-1">Go to a friend and tap Call, Text, or Video.</p>
                 </div>
@@ -67,12 +67,12 @@ const TimelinePage = () => {
                             key={entry.id}
                             className="flex items-center gap-4 bg-base-100 border border-gray-100 rounded-xl px-4 py-3 shadow-sm"
                         >
-                            {/* Icon */}
+                            
                             <div className={`w-10 h-10 rounded-full flex items-center justify-center shrink-0 ${getIconBg(entry.type)}`}>
                                 {getIcon(entry.type)}
                             </div>
 
-                            {/* Text */}
+                           
                             <div>
                                 <p className="text-sm">
                                     <span className="font-semibold">{entry.type}</span>

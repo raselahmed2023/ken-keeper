@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import AppCard from "../components/ui/AppCard"
+import friendsData from '@/data/friends.json';
 
 const Hero = async () => {
     const stats = [
@@ -10,8 +11,7 @@ const Hero = async () => {
         { value: 12, label: "Interactions This Month" },
     ];
 
-    const res = await fetch('http://localhost:3000/friends.json');
-    const friends = await res.json();
+    const friends = friendsData;
 
 
     return (

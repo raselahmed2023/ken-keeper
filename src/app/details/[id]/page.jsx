@@ -3,18 +3,15 @@ import Link from 'next/link';
 import { MdSnooze } from "react-icons/md";
 import { IoMdArchive } from "react-icons/io";
 import { RiDeleteBin5Fill } from "react-icons/ri";
-import { MdAddIcCall } from "react-icons/md";
-import { FcSms } from "react-icons/fc";
-import { FaVideo } from "react-icons/fa6";
 import CheckInButtons from '@/components/ui/CheckInButton';
+import friendsData from '@/data/friends.json';
+
 
 
 
 const DetailPage = async ({ params }) => {
     const { id } = await params;
-
-    const res = await fetch('http://localhost:3000/friends.json');
-    const friends = await res.json();
+    const friends = friendsData;
     const friend = friends.find((f) => f.id === parseInt(id));
 
     if (!friend) {
@@ -39,17 +36,17 @@ const DetailPage = async ({ params }) => {
     return (
         <div className="max-w-4xl mx-auto px-6 py-10">
 
-            
+
             <Link href="/" className="text-sm text-gray-400 hover:text-gray-600 mb-6 inline-block">
                 ← Back
             </Link>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-                {/* Left Column */}
+
                 <div className="flex flex-col gap-4">
 
-                    {/* Profile Card */}
+
                     <div className="card bg-base-100 shadow-sm p-6 flex flex-col items-center text-center gap-3">
                         <div className="avatar">
                             <div className="w-24 h-24 rounded-full">
@@ -73,20 +70,20 @@ const DetailPage = async ({ params }) => {
                         <p className="text-sm text-gray-400 italic mt-1">{friend.bio}</p>
                     </div>
 
-                    {/* Actions */}
+
                     <div className="card bg-base-100 shadow-sm p-4 flex flex-col gap-2">
                         <button className="btn btn-sm btn-outline w-full"><MdSnooze /> Snooze 2 Weeks</button>
                         <button className="btn btn-sm btn-outline w-full"><IoMdArchive /> Archive</button>
                         <button className="btn btn-sm w-full text-red-500 border-red-300 hover:bg-red-50 hover:border-red-400">
-                           <RiDeleteBin5Fill /> Delete
+                            <RiDeleteBin5Fill /> Delete
                         </button>
                     </div>
                 </div>
 
-                {/* Right Column */}
+
                 <div className="md:col-span-2 flex flex-col gap-4">
 
-                    {/* Stats Row */}
+
                     <div className="grid grid-cols-3 gap-4">
                         <div className="card bg-base-100 shadow-sm p-4 text-center">
                             <p className="text-3xl font-bold">{friend.days_since_contact}</p>
@@ -102,7 +99,7 @@ const DetailPage = async ({ params }) => {
                         </div>
                     </div>
 
-                    {/* Relationship Goal */}
+
                     <div className="card bg-base-100 shadow-sm p-5">
                         <div className="flex justify-between items-center mb-2">
                             <h3 className="font-semibold text-base">Relationship Goal</h3>
@@ -114,9 +111,9 @@ const DetailPage = async ({ params }) => {
                     </div>
 
                     <CheckInButtons friendName={friend.name} />
-                    
 
-                    {/* Contact Info */}
+
+
                     <div className="card bg-base-100 shadow-sm p-5">
                         <h3 className="font-semibold text-base mb-3">Contact Info</h3>
                         <div className="flex flex-col gap-2 text-sm">
