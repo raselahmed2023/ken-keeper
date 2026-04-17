@@ -4,10 +4,13 @@ import toast from 'react-hot-toast';
 import { MdAddIcCall } from 'react-icons/md';
 import { FcSms } from 'react-icons/fc';
 import { FaVideo } from 'react-icons/fa6';
+import { useTimeline } from '@/context/TimelineContext';
 
 const CheckInButtons = ({ friendName }) => {
+     const { addEntry } = useTimeline();
 
     const handleCheckIn = (type) => {
+         addEntry(type, friendName);
         
         toast.success(`${type} with ${friendName} recorded!`, {
         });
