@@ -41,9 +41,9 @@ const Hero = async () => {
                     {friends.map((friend) => (
 
                         <Link href={`/details/${friend.id}`} key={friend.id}>
-                            <div className="cursor-pointer">
+                            
                                 <AppCard friend={friend}></AppCard>
-                            </div>
+                            
                         </Link>
                     ))}
                 </div>

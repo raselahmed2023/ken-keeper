@@ -20,7 +20,7 @@ const CheckInButtons = ({ friendName }) => {
         <div className="card bg-base-100 shadow-sm p-5 border border-gray-100">
             <h3 className="font-semibold text-gray-700 mb-4">Quick Check-In</h3>
 
-            <div className="grid grid-cols-3 gap-3">
+            <div className="grid  grid-cols-1 lg:grid-cols-3 md:grid-cols-3 gap-3">
                 <button
                     onClick={() => handleCheckIn('Call')}
                     className="btn btn-outline hover:btn-success flex flex-col h-20 gap-1"

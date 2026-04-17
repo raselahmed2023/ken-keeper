@@ -84,7 +84,7 @@ const DetailPage = async ({ params }) => {
                 <div className="md:col-span-2 flex flex-col gap-4">
 
 
-                    <div className="grid grid-cols-3 gap-4">
+                    <div className="grid  grid-cols-1 lg:grid-cols-3 md:grid-cols-3 gap-4">
                         <div className="card bg-base-100 shadow-sm p-4 text-center">
                             <p className="text-3xl font-bold">{friend.days_since_contact}</p>
                             <p className="text-xs text-gray-400 mt-1">Days Since Contact</p>

@@ -19,7 +19,7 @@ const AppCard = ({ friend }) => {
 
     return (
         <div >
-            <div className="card bg-base-100 w-96 shadow-sm">
+            <div className="card bg-base-100 w-full shadow-sm">
                 <figure className="pt-8">
                     <div className="avatar">
                         <div className="w-24 h-24 rounded-full shadow-sm">
