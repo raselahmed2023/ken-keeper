@@ -56,7 +56,7 @@ const TimelinePage = () => {
             
             {filtered.length === 0 ? (
                 <div className="text-center text-gray-400 py-20">
-                    <p className="text-4xl mb-4 items-center"><BsMailboxFlag /></p>
+                    <p className="text-4xl mb-4 justify-center"><BsMailboxFlag /></p>
                     <p>No interactions yet.</p>
                     <p className="text-sm mt-1">Go to a friend and tap Call, Text, or Video.</p>
                 </div>

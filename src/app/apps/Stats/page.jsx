@@ -30,7 +30,7 @@ const StatsPage = () => {
 
                 {data.length === 0 ? (
                     <div className="text-center text-gray-400 py-20">
-                        <p className="text-4xl mb-3"><GiFiles /></p>
+                        <p className="text-4xl mb-3 justify-center"><GiFiles /></p>
                         <p>No data yet. Log some interactions first.</p>
                     </div>
                 ) : (
