@@ -11,3 +11,6 @@ Used Technologies are:
 1. Next.js	Build the UI
 2. Tailwind CSS and Daisy UI
 3. Recharts	Chart and React toast and React icon
+
+//live link 
+https://kin-keeper-seven-self.vercel.app/
