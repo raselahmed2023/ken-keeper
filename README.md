@@ -125,15 +125,3 @@ npm install recharts react-icons react-toastify
 * Notes and memory journal
 * Social media integration
 * Friendship analytics dashboard
-
----
-
-## 👨‍💻 Author
-
-**Rasel Ahmed**
-
-Portfolio: https://portfolio-lac-iota-96.vercel.app/
-
-LinkedIn: https://www.linkedin.com/in/rasel-ahmed06/
-
-GitHub: https://github.com/raselahmed2023
